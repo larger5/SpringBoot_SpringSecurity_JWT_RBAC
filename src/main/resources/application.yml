@@ -1,0 +1,13 @@
+server:
+  port: 80 #为了以后访问项目不用写端口号
+  context-path: / #为了以后访问项目不用写项目名
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://120.79.197.130:3307/testspring
+    username: root
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update  #数据库同步代码
+    show-sql: true      #dao操作时，显示sql语句
